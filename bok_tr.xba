@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="bok_tr" script:language="StarBasic" script:moduleType="normal">function trtr(a as integer, b as integer, c as integer) as integer
+	trtr=1
+	if a+b&lt;=c then
+		trtr=0
+	elseif b+c&lt;=a then
+		trtr=0
+	elseif c+a&lt;=b then
+		trtr=0
+	endif
+end function
+</script:module>

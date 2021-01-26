@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="binary" script:language="StarBasic" script:moduleType="normal">REM  *****  BASIC  *****
+function bin(a as integer) as string
+	bin=&quot;&quot;
+	dim temp as integer
+	temp = a
+	while temp &gt; 0
+		if temp mod 2 = 0 then
+			bin=0 &amp; bin
+		else
+			bin=1 &amp; bin
+			temp=temp-1
+		end if
+		temp=temp-temp/2
+	wend
+end function 
+</script:module>
